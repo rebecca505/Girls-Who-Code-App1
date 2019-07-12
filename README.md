@@ -1,3 +1,3 @@
 # girls-who-code-app-development-one
-An app that uses camera and has filters. It has the ability to save to the photo album
 
+An app development class that took place at Harvy Mudd in 2019-2020.
