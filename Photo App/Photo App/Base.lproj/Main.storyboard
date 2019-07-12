@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Photo_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4T2-aS-zBD">
+                                <rect key="frame" x="48.333333333333343" y="532" width="109" height="36"/>
+                                <color key="backgroundColor" red="0.89124124163103491" green="0.83811715601231374" blue="0.98840802910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="3Ak-pk-Nt2"/>
+                                    <constraint firstAttribute="width" constant="109" id="jBg-lm-f3D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="take photo">
+                                    <color key="titleColor" red="0.74991083427000871" green="0.41361156558962298" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleTakePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w6u-6F-nHo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-cb-6c1">
+                                <rect key="frame" x="48.333333333333343" y="643" width="110" height="36"/>
+                                <color key="backgroundColor" red="0.89124124159999996" green="0.83811715600000003" blue="0.98840802910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="978-Ud-tqX"/>
+                                    <constraint firstAttribute="height" constant="36" id="EXO-RK-Wll"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="save photo">
+                                    <color key="titleColor" red="0.74991083430000005" green="0.41361156560000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleSavePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1I-kg-ZpI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnu-5G-9Bt">
+                                <rect key="frame" x="66.333333333333329" y="750" width="73.999999999999986" height="36"/>
+                                <color key="backgroundColor" red="0.89124124159999996" green="0.83811715600000003" blue="0.98840802910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="1Lz-1A-0d8"/>
+                                    <constraint firstAttribute="height" constant="36" id="2bT-kI-WPs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="gallery">
+                                    <color key="titleColor" red="0.74991083430000005" green="0.41361156560000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="W8T-gT-jYF" kind="show" id="WZe-ui-cgV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta9-od-ykl">
+                                <rect key="frame" x="269.33333333333331" y="532" width="63" height="36"/>
+                                <color key="backgroundColor" red="0.73080268429373396" green="0.98840802910000003" blue="0.96175383422084015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="0b9-2h-od6"/>
+                                    <constraint firstAttribute="height" constant="36" id="Hph-k6-HLV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="Sepia">
+                                    <color key="titleColor" red="0.2969662195789402" green="0.79568036091640348" blue="0.88497814119170981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Sepia:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkB-Oo-k69"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfC-3R-2TO">
+                                <rect key="frame" x="249" y="643" width="102" height="36"/>
+                                <color key="backgroundColor" red="0.72926813364028931" green="0.98766165971755981" blue="0.9621087908744812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6oY-cO-BUC"/>
+                                    <constraint firstAttribute="width" constant="102" id="j25-UJ-B26"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="Halftone">
+                                    <color key="titleColor" red="0.29696621960000003" green="0.79568036090000005" blue="0.88497814119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Halftone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8T-mB-X8L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl0-Eh-5JF">
+                                <rect key="frame" x="273.33333333333331" y="750" width="55" height="36"/>
+                                <color key="backgroundColor" red="0.72926813364028931" green="0.98766165971755981" blue="0.9621087908744812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="6rt-Bs-nmb"/>
+                                    <constraint firstAttribute="height" constant="36" id="bM7-ek-sUd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="Noir">
+                                    <color key="titleColor" red="0.29696621960000003" green="0.79568036090000005" blue="0.88497814119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Noir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Zg-9w-Z26"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qfl-6w-fl8">
+                                <rect key="frame" x="54" y="114" width="267" height="317"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="317" id="Vh8-QO-3a3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98553929885536051" green="1" blue="0.66183098621703573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XOt-cb-6c1" firstAttribute="top" secondItem="4T2-aS-zBD" secondAttribute="bottom" constant="75" id="0u0-SK-lCr"/>
+                            <constraint firstItem="Vnu-5G-9Bt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66.329999999999998" id="3Lo-GW-0XL"/>
+                            <constraint firstAttribute="bottom" secondItem="dl0-Eh-5JF" secondAttribute="bottom" constant="26" id="Alz-sg-VvW"/>
+                            <constraint firstItem="qfC-3R-2TO" firstAttribute="top" secondItem="ta9-od-ykl" secondAttribute="bottom" constant="75" id="Chp-lg-5Do"/>
+                            <constraint firstItem="Vnu-5G-9Bt" firstAttribute="top" secondItem="XOt-cb-6c1" secondAttribute="bottom" constant="71" id="Dzu-si-Nb9"/>
+                            <constraint firstItem="Qfl-6w-fl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GG1-7W-O1q"/>
+                            <constraint firstItem="XOt-cb-6c1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48.329999999999998" id="I1E-d7-r3e"/>
+                            <constraint firstItem="dl0-Eh-5JF" firstAttribute="top" secondItem="qfC-3R-2TO" secondAttribute="bottom" constant="71" id="QeA-1y-tVn"/>
+                            <constraint firstItem="Qfl-6w-fl8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="S2G-Jh-8aa"/>
+                            <constraint firstItem="4T2-aS-zBD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48.329999999999998" id="ZGN-ab-F5a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dl0-Eh-5JF" secondAttribute="trailing" constant="46.670000000000002" id="baO-gA-cRa"/>
+                            <constraint firstItem="Qfl-6w-fl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="bfc-Sf-LRn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qfC-3R-2TO" secondAttribute="trailing" constant="24" id="owC-KL-cBy"/>
+                            <constraint firstItem="qfC-3R-2TO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="249" id="rbI-2N-Hd4"/>
+                            <constraint firstAttribute="bottom" secondItem="Vnu-5G-9Bt" secondAttribute="bottom" constant="26" id="vUv-oz-61s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ta9-od-ykl" secondAttribute="trailing" constant="42.670000000000002" id="z2n-yL-bq4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="Qfl-6w-fl8" id="5w1-vQ-SRL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="115.27093596059113"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="9KN-PG-e1b">
+            <objects>
+                <viewController id="W8T-gT-jYF" customClass="GalleryViewController" customModule="Photo_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PNk-Eq-LyN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gallery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWj-hL-O6u">
+                                <rect key="frame" x="80" y="95" width="215" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="2O1-Bl-Zm8"/>
+                                    <constraint firstAttribute="width" constant="215" id="6fu-xP-6JJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="70"/>
+                                <color key="textColor" red="0.46721178756476689" green="0.46721178756476689" blue="0.46721178756476689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MvL-2V-awG">
+                                <rect key="frame" x="54.666666666666657" y="247.66666666666663" width="266" height="317"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="Cth-zc-qzi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="266" id="NgK-b7-m6r"/>
+                                    <constraint firstAttribute="height" constant="317" id="cRj-Ai-NaR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="317" id="lR8-jA-dR2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnG-JS-K8Q">
+                                <rect key="frame" x="60" y="668" width="74" height="36"/>
+                                <color key="backgroundColor" red="0.98840802910000003" green="0.96851910609001712" blue="0.7119521000366934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="HMC-ul-4sX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="QfY-jF-XIo"/>
+                                    <constraint firstAttribute="height" constant="36" id="vVC-A3-Jcy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="home">
+                                    <color key="titleColor" red="0.75297522668393779" green="0.72838797922463749" blue="0.20102331204212631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="uzc-JP-Ysr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69366377592086792" green="0.94940274953842163" blue="0.98840802907943726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FFt-14-8My" firstAttribute="bottom" secondItem="cnG-JS-K8Q" secondAttribute="bottom" constant="74" id="6Rz-Vk-FvZ"/>
+                            <constraint firstItem="eWj-hL-O6u" firstAttribute="centerX" secondItem="PNk-Eq-LyN" secondAttribute="centerX" id="7jd-dz-7ve"/>
+                            <constraint firstItem="eWj-hL-O6u" firstAttribute="top" secondItem="FFt-14-8My" secondAttribute="top" constant="51" id="8h4-zW-3tu"/>
+                            <constraint firstItem="cnG-JS-K8Q" firstAttribute="leading" secondItem="FFt-14-8My" secondAttribute="leading" constant="60" id="GJh-4w-OyG"/>
+                            <constraint firstItem="eWj-hL-O6u" firstAttribute="centerX" secondItem="MvL-2V-awG" secondAttribute="centerX" id="r1e-Ag-Jkk"/>
+                            <constraint firstItem="MvL-2V-awG" firstAttribute="centerY" secondItem="PNk-Eq-LyN" secondAttribute="centerY" id="xYg-qQ-dfd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FFt-14-8My"/>
+                    </view>
+                    <connections>
+                        <outlet property="galleryImageView" destination="MvL-2V-awG" id="8VZ-PL-GVC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45x-He-hnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="116"/>
+        </scene>
+    </scenes>
+</document>
